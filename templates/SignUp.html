@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sign up</title>
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='16.css') }}">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style> 
+.Container
+{
+    width: 500px;
+    box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.37);
+    background: #000000d1;
+    padding: 20px;
+    margin: 0% auto 0;  
+    margin-left: 2%;
+    text-align:left;
+    border-radius: 10px;
+    margin-left: 32%;
+    margin-top: 10%;
+}
+h1
+{
+font-family:Arial, Helvetica, sans-serif;
+color: rgb(0, 0, 0);
+margin-top: -50px ;
+padding-left: 40%;
+}
+.input-box
+{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+label {
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+} 
+img
+{
+        width: 200px;
+        margin-top: -50px ;
+        margin-left: 100px;
+        border-radius: 10px;
+        padding-left: 5%;
+}
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://undp-asia-pacific.shorthandstories.com/what-s-hate-got-to-do-with-it/assets/yQMCufLrHK/g2-5.gif");
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    
+}
+button
+{
+    background-color:rgb(0, 0, 0);
+    width: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 10px, 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+select option 
+{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+select {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    width: 45%;
+    margin-right: 12px;
+    position: relative;
+   }
+</style>
+<body>
+
+
+	<div class="container d-flex flex-direction: column; justify-content: start;>
+		<h2 class='container-heading' style=" font-family: serif;"><span class="heading_font" sylte=" font-family: serif;">Effective heart disease prediction using hybrid machine learning techniques</span></h2>
+		<div class='description'>
+			<!--<p>Effective heart disease prediction using hybrid machine learning techniques</p><br>-->
+      
+		</div>
+    </div>
+  
+    <form action="/Signupdb" method="post" >
+        <div class="Container">
+            <div>
+        <img src= "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTlhMTI5MDM1OTJmNmY1YWM1ZTUzNmI5OGU2OTI0YTE4Y2I1NjAwYyZjdD1z/bw7FnzvJhpyaqpCycO/giphy.gif"> <br>
+                <h1>  </h1><br><br>
+                <label>  Name: </label>
+                <input type="text"  name="firstname" class="input-box" id="First Name" placeholder="First Name"><br>  
+                
+                <label> Email ID: </label>
+                <input type="email" name="mail" class="input-box" id="Email ID" placeholder="Your Email ID"><br>
+                <label> Password: </label>
+                <input type="password" name ="pwd" class="input-box" placeholder="Your Customized Password"><br><br>
+                <button type="submit"> Sign Up </button>               
+            </div>
+        </div>
+    </form>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heart Disease Predictor</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='21.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body style="background-image= url(https://cdn.pixabay.com/animation/2022/12/01/17/03/17-03-11-60_512.gif) background-size: cover;">
+
+        <!-- Website Title -->
+		<div class="container">
+    <h2 class='container-heading'><span class="heading_font">Effective heart disease prediction using hybrid machine learning techniques</span></h2>
+    <div class='description'>
+      <!--<p>Effective heart disease prediction using hybrid machine learning techniques</p><br>-->
+      
+    </div>
+  </div>
+
+		<!-- Result -->
+		<div class="results" style=" width: 80vw; margin: 50px auto; padding: 30px; background-color: #fff; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>You have Chances of Heart Disease.</span></h1>
+				<div>
+						<h1 class="result">PRECAUTIONS</h1>
+						<div style=" text-align: left;">
+							<ul>
+								<li>Eat a heart-healthy diet: A diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help lower your risk of heart disease.</li>
+								<li>Exercise regularly: Regular physical activity can help improve your heart health and reduce your risk of heart disease.</li>
+								<li>Maintain a healthy weight: Being overweight or obese can increase your risk of heart diseases. Maintaining a healthy weight can help reduce this risk.</li>
+								<li>Manage stress: Stress can have a negative impact on heart health. Finding ways to manage stress, such as through meditation or deep breathing exercises, can help improve heart health.</li>
+								<li>Quit smoking: Smoking can damage your heart and blood vessels, and increase your risk of heart diseases. Quitting smoking can help improve your heart health.</li>
+								<li>Manage medical conditions: Certain medical conditions, such as high blood pressure, high cholesterol, and diabetes, can increase your risk of heart diseases. Managing these conditions with medication and lifestyle changes can help reduce this risk.</li>
+							</ul>
+						</div>
+				</div>
+				
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You are Safe from Heart Disease.</span></h1>
+				<div>
+						<h1 class="result">PRECAUTIONS</h1>
+						<div style=" text-align: left;">
+							<ul>
+								<li>Eat a heart-healthy diet: A diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help lower your risk of heart disease.</li>
+								<li>Exercise regularly: Regular physical activity can help improve your heart health and reduce your risk of heart disease.</li>
+								<li>Maintain a healthy weight: Being overweight or obese can increase your risk of heart diseases. Maintaining a healthy weight can help reduce this risk.</li>
+								<li>Manage stress: Stress can have a negative impact on heart health. Finding ways to manage stress, such as through meditation or deep breathing exercises, can help improve heart health.</li>
+								<li>Quit smoking: Smoking can damage your heart and blood vessels, and increase your risk of heart diseases. Quitting smoking can help improve your heart health.</li>
+								<li>Manage medical conditions: Certain medical conditions, such as high blood pressure, high cholesterol, and diabetes, can increase your risk of heart diseases. Managing these conditions with medication and lifestyle changes can help reduce this risk.</li>
+							</ul>
+						</div>
+				</div>
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/asthasharma98/Heart-Disease-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/astha-sharma-47266b11b/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made by TEAM 4</p>
+       </div>
+
+	</body>
+</html>
