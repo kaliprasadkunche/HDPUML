@@ -20,7 +20,7 @@ def Signup():
 	
 @app.route('/Signupdb', methods=['POST'])
 def do_userregisterdb():
-    return render_template('NewLogin.html')
+    return render_template('main.html')
 	
 	
 @app.route('/LoginDB', methods=['POST'])
